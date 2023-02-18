@@ -355,3 +355,16 @@ body {
 .slideOut {
     animation: slideLeftOut 2s ease-in forwards;
 }
+
+
+#portfolioBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
