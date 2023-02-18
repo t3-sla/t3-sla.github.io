@@ -357,14 +357,3 @@ body {
 }
 
 
-#portfolioBlock{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#contactBlock{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
