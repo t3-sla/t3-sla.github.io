@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio || Bogdan Degtyarev</title>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+        <header class="header">
+            <a href="#" class="logo">Portfolio.</a>
+
+            <nav class="navbar">
+                <a id="homeBtn" class="active" href="#" style="--i: 1">Home</a>
+                <a id="aboutBtn" href="#" style="--i: 2">About</a>
+                <a id="skillsBtn" href="#" style="--i: 3">Skills</a>
+                <a id="portfolioBtn" href="#" style="--i: 4">Portfolio</a>
+                <a id="contactBtn" href="#" style="--i: 5">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home slideIn" id="homeBlock">
+            <div class="home-content">
+                <h1>Bogdan Degtyarev</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ab autem
+                    repellat reiciendis ipsam perspiciatis.
+                </p>
+                <div class="social-media">
+                    <a href="#" style="--i: 6"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" style="--i: 7"><i class="bx bxl-github"></i></a>
+                    <a href="#" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+                </div>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+        </section>
+
+        <section id="aboutBlock" class="about hidden">
+            <div class="about-content">
+                <h1>About me</h1>
+                <p>
+                    I am 20 years old developer from Russia.<br />
+                    Now live in Japan.<br />
+                    I don't know what to write next XD
+                </p>
+            </div>
+        </section>
+
+        <section id="skillsBlock" class="skills hidden">
+            <div class="skill-list">
+                <div class="skill" style="--i: 1">
+                    <div class="skill-name"><icon class="bx bxl-html5"></icon> HTML</div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill" style="--i: 2">
+                    <div class="skill-name"><icon class="bx bxl-css3"></icon> CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="70%" style="max-width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill" style="--i: 3">
+                    <div class="skill-name"><icon class="bx bxl-javascript"></icon> Java Script</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="60%" style="max-width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="portfolioBlock" class="portfolio hidden">
+            <h1>Porfolio</h1>
+
+        </section>
+        <section id="portfolioBlock" class="portfolio hidden">
+            <h1>Porfolio</h1>
+            <p>Coming soon</p>
+        </section>
+        </section>
+        <section id="contactBlock" class="contact hidden">
+            <h1>contacts</h1>
+            <p>Call me))</p>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
