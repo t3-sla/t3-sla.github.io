@@ -1,5 +1,5 @@
 var typed = new Typed('.multiple-text', {
-    strings: ['Junior Frontend Developer', 'Student', 'Raspizdyai'],
+    strings: ['Junior Frontend Developer', 'Student', 'Anime Lover'],
     typeSpeed: 100,
     backSpeed: 70,
     backDelay: 1000,
@@ -21,14 +21,13 @@ console.log(blocks);
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
-        
-        //Blocks 
+        //Blocks
         const blockId = button.getAttribute('id').replace('Btn', 'Block');
         const currentBlock = document.querySelector('secttion, .slideIn');
         const newBlock = document.querySelector(`#${blockId}`);
 
         //Buttons
-        const btnId = button.getAttribute('id')
+        const btnId = button.getAttribute('id');
         const currentBtn = document.querySelector('nav.navbar > a.active');
         const newBtn = document.querySelector(`#${btnId}`);
 
@@ -37,19 +36,15 @@ buttons.forEach((button) => {
             currentBlock.classList.remove('slideIn');
             currentBlock.classList.add('slideOut');
 
-            currentBtn.classList.remove('active');  //Move btn .active class
+            currentBtn.classList.remove('active'); //Move btn .active class
             newBtn.classList.add('active');
-            
-            window.setTimeout(() => {  
+
+            window.setTimeout(() => {
                 currentBlock.classList.add('hidden');
                 newBlock.classList.remove('hidden');
                 newBlock.classList.remove('slideOut');
-                newBlock.classList.add('slideIn');        
+                newBlock.classList.add('slideIn');
             }, '1500');
-            
-        
-
-            
         }
     });
 });
