@@ -344,7 +344,6 @@ body {
 
 .slideIn {
     animation: slideTop 2s ease forwards;
-    display: flex;
 }
 
 .slideOut {
