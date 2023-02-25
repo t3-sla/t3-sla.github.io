@@ -5,12 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body {
     background: #1f242d;
     color: #fff;
+    overflow: hidden;
 }
 
 .header {
@@ -46,17 +47,15 @@ body {
     margin-left: 35px;
     transition: 0.3s;
     opacity: 0;
-    animation: slideTop .5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
 }
 
 .navbar a:hover,
 .navbar a.active {
-
     color: #0ef;
     box-sizing: inherit;
     text-shadow: 0 0 0 #0ef, 0 0 0 #0ef, 0 0 0.3rem #0ef, 0 0 0 #0ef;
-
 }
 
 .home {
@@ -68,10 +67,7 @@ body {
     align-items: center;
     padding: 5.3rem 10% 0;
     user-select: none;
-
 }
-
-
 
 .home-content {
     max-width: 600px;
@@ -107,7 +103,6 @@ body {
     animation: slideLeft 1s ease forwards;
 }
 
-
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -121,10 +116,10 @@ body {
     color: #0ef;
     text-decoration: none;
     margin: 30px 20px 30px 20px;
-    transition: .5s ease;
+    transition: 0.5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    animation-delay: calc(0.2s * var(--i));
 }
 
 .social-media a:hover {
@@ -144,7 +139,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
-    animation: slideTop .5s ease forwards;
+    animation: slideTop 0.5s ease forwards;
     animation-delay: 2s;
     transition-duration: 0.4s;
 }
@@ -157,8 +152,6 @@ body {
     box-shadow: 2px 2px 2px #0ef;
 }
 
-
-
 .about {
     height: 100vh;
     width: 100%;
@@ -168,21 +161,23 @@ body {
     display: flex;
 }
 
-#portfolio {
-    position: relative;
-    top: 30rem;
+.portfolio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/*Block IN OUT */
-
+.contact{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .hidden {
     display: none;
 }
-
-
-
-
 
 /* KEYFRAMES IN ANIMATION */
 @keyframes slideRight {
@@ -277,8 +272,6 @@ body {
     }
 }
 
-
-
 .skill {
     transform: translateX(-65vh);
     animation: slideRight 1s ease forwards;
@@ -313,7 +306,7 @@ body {
     border-radius: 0.8rem;
     position: relative;
     animation: fillBars 1.5s ease-out 1;
-    animation-delay: calc(.1s*var(--i));
+    animation-delay: calc(0.1s * var(--i));
 }
 
 .skill-per::before {
@@ -329,7 +322,7 @@ body {
 }
 
 .skill-per::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 0.45rem;
     height: 0.45rem;
@@ -337,7 +330,6 @@ body {
     right: 0;
     transform: translateX(50%) rotate(45deg);
     z-index: 10;
-
 }
 
 @keyframes fillBars {
@@ -349,7 +341,6 @@ body {
         width: 100%;
     }
 }
-
 
 .slideIn {
     animation: slideTop 2s ease forwards;
